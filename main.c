@@ -50,6 +50,11 @@ int multi(int number1, int number2)
 }
  
 int div(int number1, int number2)
-{
-	return number1 / number2;
+{	
+	if (number2 == 0){
+		returnValue = 0;
+	} else {
+		returnValue = number1 / number2;
+	}
+	return returnValue;
 }
